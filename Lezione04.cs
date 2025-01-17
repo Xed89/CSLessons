@@ -16,27 +16,19 @@ class Lezione04
     // Esercizio 1: Osserva qui sopra la riga della dichiarazione della variabile int valore1 = 8;
     //              Che cosa noti? 
     //              Se metti il mouse sopra la variabile valore1 in quella riga, che cosa ti dice il compilatore?
-    //unneccessary  assignment  of a value  to 'valore1'
     //              Perché secondo te da quel messaggio?
-    // perchè non serve assegnare questo valore se dopo lo cambi prima di farci qualcosa
 
     // Esercizio 2: Che cosa scriveranno nella console le seguenti righe?
     int valore2 = 12 + 3;
     Console.WriteLine(valore2);
-    valore2 = valore2 + valore1 - 1; //23
+    valore2 = valore2 + valore1 - 1;
     Console.WriteLine(valore2);
-/*
-15
-23
-*/
 
     // Esercizio 3: Hai le due variabili seguenti:
    var valoreA = 7;
    var valoreB = 9;
     // Scrivi qui di seguito il codice necessario per scambiare i valori delle due variabili:
-   var valoreC = valoreA;
-   valoreA = valoreB;
-   valoreB = valoreC;
+
     // Suggerimento: Pensa a come faresti se le due variabili fossero secchielli, uno con pittura rossa, l'altro blu
     // Quando eseguirai il codice, se hai scritto giusto, vedrai stampati i valori scambiati:
     Console.WriteLine("Il valore della variabile 'valoreA' deve essere 9, ed è: " + valoreA);

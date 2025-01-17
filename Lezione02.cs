@@ -21,18 +21,18 @@ class Lezione02
 
     // Esercizio 1:
     // Metti il mouse sopra la variabile una_variabile qui sopra, e leggi la spiegazione del perché è sottolieata
-   //fatto
+
     // In effetti una variabile ha senso solo se ci mettiamo dentro qualcosa, e si fa con l'operatore di assegnazione
     // che per mancanza di originalità è l'uguale
 
     // Esercizio 2: Prova a decommentare la seguente riga e vedi cosa succede alla sottolineatura sopra
-   una_variabile = 7;
+    //una_variabile = 7;
     // E' sparita? che cosa dice ora se ci vai sopra?
-   // dice che lavariabile, esiste, ha un valore ma non è usata
+
     // In effetti neanche salvare un numero in memoria per poi non leggerlo mai più non ha molto senso.
     // Esercizio 3: Pensa fortissimo alla lezione 1 e scrivi una riga di codice che scrive nella console il valore
     //              della variabile una_variabile
-    Console.WriteLine(una_variabile);
+
     // ATTENZIONE! la soluzione non è Console.WriteLine("una_variabile");
     //             ma ti consiglio di provarla e vedere cosa succede se la esegui con F5
  }

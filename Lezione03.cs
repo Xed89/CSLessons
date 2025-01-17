@@ -21,9 +21,7 @@ class Lezione03
     Console.WriteLine(valore1_piu_valore2);
 
     // Esercizio 2: Dichiara una variabile che si chiama sottrazione e assegnagli il valore di valore1 meno valore2 meno 7
-   var sottrazione = valore1 - valore2 - 7;
   
     // Esercizio 3: Scrivi una riga di codice che scrive nella console il valore della variabile dell'esecizio 2
-     Console.WriteLine(sottrazione);
   }
 }

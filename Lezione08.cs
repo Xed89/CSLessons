@@ -34,45 +34,35 @@ class Lezione08
     Console.Write("Roberto: ");
     while (1 < 3) {
       Console.Write("A");
+
+      // Questa riga fa fermare il programma per 300 millisecondi, per evitare di intasare la console di A
+      System.Threading.Thread.Sleep(300);
     }
     */
-    //scrive "Pomodoro: 'ciao roberto!'" poi, in un altra riga scrive Roberto: " e se il 3 è maggiore dell'1 scrive "A"
-    //all' infinito 
+    
+
     // Ora proviamo a scrivere il programma della calcolatrice che fa le somme.
     // Come avrai capito, siccome il while continua a eseguire il codice finché la condizione è vera, ci dovrà
     // essere qualcosa nella condizione che cambia, che varia, come una... variabile?
     // Usiamo una variabile di nome 'finito' per determinare se abbiamo finito
     // Esercizio 2: Quali valori può avere la variabile 'finito'? Che tipo di dato possiamo usare? Dichiarala qui di seguito
     //              ps: sono scritti tutti nella lezione 5 :P
-    //2
-    bool chiedere = true; //(condizione falsa)
+
     // Esercizio 3: Decommenta il seguente codice e completalo
     
+    /*
     // Scrivi qui la condizione, dobbiamo continuare a chiedere numeri e sommarli fintanto che...
-    
-    //while (chiedere)
+    while ( )
     {
       // Qui riscrivi il codice che chiede e somma i numeri come alla lezione 6
 
-      Console.Write("scrivi un numero e premi invio: ");
-      string? Valore1_1 = Console.ReadLine();
-      Console.Write("scrivi un numero e premi invio: ");
-      string? Valore1_2 = Console.ReadLine();
 
-      Console.Write("LA RISPOSTA è:");
-      Console.WriteLine(Int32.Parse(Valore1_1)+Int32.Parse(Valore1_2));
        
       // Ora non ci resta che capire se continuare a chiedere numeri, come possiamo fare?
       // Suggerimento: Chiediamolo all'utente :P 
       //               Se l'utente non vuole continuare, questo codice deve cambiare una variabile 
       //               per uscire poi al prossimo ciclo del while
-      Console.WriteLine("vuoi altri calcoli? scrivi 1 se la risposta è si scrivi 2 se la risposta è no");
-      string? risposta = Console.ReadLine();
-      if(risposta == "2")
-      {
-        chiedere = false;
-      }
     }
-    
+    */
   }
 }

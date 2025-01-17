@@ -24,7 +24,7 @@ class Lezione01
 
     // Esercizio 1: Scrivi qui sotto una riga di codice che scrive nella console il testo "Ciao, mondo!"
     //              poi premi F5 nuovamente e guarda cosa scrive.
-    Console.WriteLine("ciao, mondo!");
+
 
     /*
     Un programma è composto da una sequenza di istruzioni che vengono eseguite, appunto, in sequenza
@@ -50,7 +50,6 @@ class Lezione01
 
     // Esercizio 2: 
     // Prova qui sotto a scrivere Console. (si anche il punto) e guarda che metodi la classe Console mette a disposizione
-    Console.Beep();
     // Prova a vedere se ne vedi uno che genera un suono, quindi testalo.
 
 

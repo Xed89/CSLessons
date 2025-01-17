@@ -22,7 +22,6 @@ class Lezione06
     // il punto di domanda significa che potrebbe anche non restituire alcun dato, piu avanti vedremo come gestire questo caso.
 
     // Esercizio 1: Scrivi qui di seguito una riga di codice che riscrive nella console il dato appena letto
-    //string? valore_letto = console.ReadLine();
 
     // Facciamo finta che vogliamo scrivere un programma che chiede all'utente due numeri e stampa la loro somma
     // Esercizio 2: Scrivi qui di seguito le righe di codice necessarie per leggere i due dati dall'utente
@@ -48,9 +47,7 @@ class Lezione06
 
     // Esercizio 5: Ora che abbiamo capito come interpretare il numero contenuto in una stringa, scrivi
     //              qui sotto il codice che somma i due numeri inseriti nell'esercizio 2 e mostra all'utente la somma
-    Console.WriteLine("quella vera invece è:");
-    Console.WriteLine(Int32.Parse(valore1)+Int32.Parse(valore2));
-
+        
 
   }
 }

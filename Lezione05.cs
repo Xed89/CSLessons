@@ -46,7 +46,7 @@ class Lezione05
     int variabile_intera = 123456789;
     // Esercizio 1: La variante senza segno del tipo int quale è secondo te?
     // Risposta:   
-    //uint
+    
     // Per tanto tempo la variabile intera sufficiente per fare molte cose è stato l'intero
     // ed è ancora il tipo di variabile più usato per le operazioni normali.
     // In alcuni casi serve un intero più grande ancora, pensa alle dimensioni dei file ad esempio:
@@ -63,8 +63,8 @@ class Lezione05
     ulong variabile_ulong = 18446744073709551615;
 
     // Esercizio 2: Prova a aumentare di 1 il valore assegnato a questa variabile ulong, cosa ti dice il compilatore?
-    //ulong variabile_ulong_2_il_ritorno = 18446744073709551615;
-    //ulong variabile_ulong_2_il_ritorno = 18446744073709551616;//integral costant is too large
+    ulong variabile_ulong_2_il_ritorno = 18446744073709551615;
+    
     // Passiamo ora ai numeri con la virgola.
     // Per rappresentare i numeri con la virgola 
     float variabile_a_virgola_mobile_con_precisione_singola = 6.123456f; // Notare la f alla fine che significa appunto float
@@ -95,7 +95,6 @@ class Lezione05
     // Esercizio 3: Quale è la differenza tra questi due valori?
     // Valore 1: "75"
     // Valore 2: 75
-    //il valore 2 non ha gli apici doppi
 
   }
 }

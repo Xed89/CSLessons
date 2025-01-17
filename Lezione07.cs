@@ -36,28 +36,9 @@ class Lezione07
     if (4 < 3)
       Console.WriteLine("1 è minore di 3: prima riga");
     Console.WriteLine("1 è minore di 3: seconda riga");
-    //la prima linea dopo l' if non farebbe niente perchè il 3 è più piccolo del 4
-    //ma se eseguisse scriverebbe:"1 è minore di 3" solo se 4 < 3
-    //e l'altra la fa sempre perchè senza grafe la riga di codice è una
 
 
     // Esercizio 2: Scrivi un programma che legge un numero dalla console e scrive se questo numero è minore di 3
-    Console.WriteLine("scrivi un numero e premi invio");
-    string? valore_letto_ora = Console.ReadLine();
-
-    if (Int32.Parse(valore_letto_ora) < 3 )
-    {
-      Console.WriteLine("il " + valore_letto_ora + " è minore del 3");
-    }
-    if (Int32.Parse(valore_letto_ora) > 3 )
-    {
-      Console.WriteLine("il " + valore_letto_ora + " è maggiore del 3");
-    }
-
-    if (Int32.Parse(valore_letto_ora) == 3)
-    {
-      Console.WriteLine("il " + valore_letto_ora + " è uguale al 3");
-    }
 
     // Esercizio 3: Cosa fa il seguente codice?
     Console.WriteLine("Scrivi il tuo nome:");
@@ -70,7 +51,5 @@ class Lezione07
     {
       Console.WriteLine("Ciao " + nome + "!");
     }
-    //fa i modo che tu scriva il tuo nome, e se è antonio dice "ciao antonio lo gnomo!"
-    // altrimenti dice "ciao (nome)!"
   }
 }
