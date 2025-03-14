@@ -4,9 +4,5 @@
 // In questo progetto, questo file, Program.cs, è il punto di ingresso
 // Come unica istruzione invoca il metodo Run della lezione che vuoi eseguire
 // Cambiando la riga seguente puoi cambiare quale lezione viene eseguita
-/*Lezione01.Run();
-Lezione02.Run();
-Lezione03.Run();
-Lezione04.Run();
-Lezione05.Run();*/
-Lezione08.Run();
+
+Lezione01.Run();
