@@ -4,24 +4,40 @@ public class Program
 {
   public static void Main(string[] args)
   {
-    foreach (var fullFileName in System.IO.Directory.EnumerateFiles(@"C:\temp\immagini\"))
+    var webpFullFileNameList = System.IO.Directory.EnumerateFiles(Environment.CurrentDirectory, "*.webp").ToList();
+
+    if (webpFullFileNameList.Count == 0)
     {
-      if (System.IO.Path.GetExtension(fullFileName) == ".webp")
+      Console.WriteLine("Nessun file webp trovato nella cartella corrente");
+      return;
+    }
+
+    Console.Write($"Trovati {webpFullFileNameList.Count} file nella cartella corrente, convertirli in png? (y/N): ");
+    if (Console.ReadLine() != "y")
+    {
+      Console.WriteLine("Operazione annullata");
+      return;
+    }
+
+    for (var i = 0; i < webpFullFileNameList.Count; i++)
+    {
+      var inputFullFileName = webpFullFileNameList[i];
+      Console.Write($"[{i + 1}/{webpFullFileNameList.Count}] Conversione di '{inputFullFileName}'");
+
+      var dstPath = System.IO.Path.GetDirectoryName(inputFullFileName);
+      var dstFileNameNoExt = System.IO.Path.GetFileNameWithoutExtension(inputFullFileName);
+      var outputFullFileName = dstPath + @"\" + dstFileNameNoExt + ".png";
+      if (System.IO.File.Exists(outputFullFileName))
       {
-        ConvertFileToPng(fullFileName);
+        Console.WriteLine(" - [Errore] - File saltato perché il png esiste già");
+      }
+      else
+      {
+        using var image = new MagickImage(inputFullFileName);
+        image.Write(outputFullFileName);
+        Console.WriteLine(" - [Ok] - File convertito in png");
       }
     }
-  }
-
-  public static void ConvertFileToPng(string inputFullFileName)
-  {
-    // Read first frame of gif image
-    using var image = new MagickImage(inputFullFileName);
-
-    // Save frame as jpg
-    var dstPath = System.IO.Path.GetDirectoryName(inputFullFileName);
-    var dstFileNameNoExt = System.IO.Path.GetFileNameWithoutExtension(inputFullFileName);
-    image.Write(dstPath + @"\" + dstFileNameNoExt + ".png");
   }
 }
 
