@@ -5,4 +5,4 @@
 // Come unica istruzione invoca il metodo Run della lezione che vuoi eseguire
 // Cambiando la riga seguente puoi cambiare quale lezione viene eseguita
 
-Lezione01.Run();
+Lezione08Es4.Run();
